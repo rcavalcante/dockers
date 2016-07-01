@@ -5,7 +5,7 @@ MAINTAINER Raymond Cavalcante <rcavalca@umich.edu>
 ## Remain current
 RUN apt-get update -qq
 RUN apt-get dist-upgrade -y
-RUN apt-get install -y --no-install-recommends libssl-dev libcurl4-openssl-dev libssh2-1-dev libxml2-dev pkg-config pandoc pandoc-citeproc r-base r-base-dev r-recommended littler
+RUN apt-get install -y --no-install-recommends libssl-dev libcurl4-openssl-dev libssh2-1-dev libxml2-dev pkg-config pandoc pandoc-citeproc r-base r-base-dev r-recommended littler texlive-latex-base
 RUN ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r
 
 # Create R package install script
