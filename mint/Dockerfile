@@ -86,7 +86,7 @@ RUN touch /apps/r_packages.R && \
 	echo "install.packages(c('devtools','optparse','readr','dplyr','ggplot2'), repos='http://cran.rstudio.com')" >> /apps/r_packages.R && \
 	echo "source('http://bioconductor.org/biocLite.R')" >> /apps/r_packages.R && \
 	echo "biocLite(c('BiocStyle','GenomeInfoDb','GenomicRanges','IRanges','regioneR'))" >> /apps/r_packages.R && \
-	echo "devtools::install_github('rcavalcante/annotatr@v0.7.4')" >> /apps/r_packages.R && \
+	echo "devtools::install_github('rcavalcante/annotatr@v0.8.0')" >> /apps/r_packages.R && \
 	echo "devtools::install_github('sartorlab/methylSig@v0.4.3')" >> /apps/r_packages.R && \
 	Rscript /apps/r_packages.R
 
