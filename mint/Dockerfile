@@ -74,12 +74,11 @@ RUN cd apps && \
 # Python packages
  RUN pip install numpy && \
 	pip install scipy && \
-	pip install pysam==0.8.0 && \
-	pip install --upgrade pysam && \
-	pip install multiqc==0.6.0 && \
+	pip install pysam=0.8.0 && \
+	pip install multiqc && \
 	pip install MACS2==2.1.0.20140616 && \
 	pip install cutadapt==1.10 && \
-	pip install PePr==1.1.11
+	pip install PePr==1.1.14
 
 # Create R package install script
 RUN touch /apps/r_packages.R && \
