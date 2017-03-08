@@ -103,4 +103,4 @@ RUN cd /usr/local/bin \
 && ln -s Rscriptdevel RDscript
 
 ## Install R packages for development
-RUN RDscript -e "install.packages(c('curl','devtools','optparse','rmarkdown','roxygen2','testthat')); source('http://bioconductor.org/biocLite.R'); biocLite(c('BiocStyle','annotatr'));"
+RUN RDscript -e "install.packages(c('curl','devtools','optparse','rmarkdown','roxygen2','testthat')); source('http://bioconductor.org/biocLite.R'); biocLite(c('BiocStyle','annotatr','chipenrich'));"
