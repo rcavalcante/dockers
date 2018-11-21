@@ -1,4 +1,4 @@
-This repository contains `Dockerfile`s for a variety of tools in use in our lab. For now it is a playground to figure out how to specify images, auto-build them on Docker Hub, and deploy them for use in computation. We have a [sartorlab organization](https://hub.docker.com/u/sartorlab/) on Docker Hub where our images can be found.
+This repository contains `Dockerfile`s that may be useful for the core.
 
 # Docker Documentation
 

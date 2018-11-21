@@ -4,4 +4,4 @@
 docker build -t bioc_release_36 .
 
 # Run with
-# docker run --interactive --tty --volume /Users/rcavalca/Projects:/Projects bioc_release_36 bash
+# docker run --interactive --tty --volume /path/to/folder/on/system:/path/within/docker bioc_release_36 bash
