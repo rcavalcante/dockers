@@ -4,4 +4,4 @@ RUN apt-get update -qq && apt-get -y install libssl-dev libssh2-1-dev libcurl4-o
 
 RUN pip3 install snakemake psutil
 
-RUN Rscript -e "install.packages(c('dendextend', 'devtools', 'dplyr', 'kableExtra', 'knitr', 'ggplot2', 'ggpubr', 'openxlsx', 'optparse', 'RColorBrewer', 'yaml')); BiocManager::install(c('annotatr', 'DMRcate', 'ENmix', 'IlluminaHumanMethylationEPICanno.ilm10b2.hg19', 'limma', 'minfi', 'org.Hs.eg.db', 'TxDb.Hsapiens.UCSC.hg19.knownGene'), ask = FALSE); devtools::install_github('ncchung/svdvis');"
+RUN Rscript -e "install.packages(c('dendextend', 'devtools', 'dplyr', 'kableExtra', 'knitr', 'ggplot2', 'ggpubr', 'openxlsx', 'optparse', 'RColorBrewer', 'RPMM', 'yaml')); BiocManager::install(c('annotatr', 'DMRcate', 'ENmix', 'FlowSorted.Blood.EPIC', 'IlluminaHumanMethylationEPICanno.ilm10b2.hg19', 'limma', 'minfi', 'org.Hs.eg.db', 'TxDb.Hsapiens.UCSC.hg19.knownGene'), ask = FALSE); devtools::install_github('ncchung/svdvis');"

@@ -4,5 +4,5 @@
 # BiocManager::install(ask = FALSE, update = TRUE)
 # You should commit the changes with the latest tag
 
-# This should only be run when ONE container is running and it is for bioc_devel_38
-docker container commit --pause $(docker ps -q) orochi_epic:latest
+# This should only be run when ONE container is running
+docker container commit --pause $(docker ps -q) rcavalcante/orochi_epic:R3.5.1_R3.8v1
