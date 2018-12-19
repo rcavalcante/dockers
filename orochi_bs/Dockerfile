@@ -1,6 +1,6 @@
 FROM bioconductor/release_core2:R3.4.4_Bioc3.6
 
-RUN apt-get update -qq && apt-get -y install libssl-dev libssh2-1-dev libcurl4-openssl-dev libxml2-dev python3-pip rsync
+RUN apt-get update && apt-get -y install libssl-dev libssh2-1-dev libcurl4-openssl-dev libxml2-dev python3-pip rsync
 
 RUN pip3 install snakemake psutil
 
