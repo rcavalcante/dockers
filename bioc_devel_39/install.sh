@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # Change tag with each version of Bioconductor
-docker build -t bioc_devel_39 .
+docker build -t rcavalcante/rdev_bioc3.9 .
 
-# docker run --interactive --tty --volume /path/to/folder/on/system:/path/within/docker bioc_devel_39 bash
+docker push rcavalcante/rdev_bioc3.9:latest
+
+# docker run --interactive --tty --volume /path/to/folder/on/system:/path/within/docker rcavalcante/rdev_bioc3.9 bash

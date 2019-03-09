@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 # Whenever packages are updated with:
-# biocLite(ask=FALSE)
+# biocLite(ask=TRUE)
 # You should commit the changes with the latest tag
 
 # This should only be run when ONE container is running and it is for bioc_devel_38
-docker container commit --pause $(docker ps -q) bioc_release_36:latest
+docker container commit --pause $(docker ps -q) rcavalcante/r3.4.4_bioc3.6
+
+docker push rcavalcante/r3.4.4_bioc3.6:latest
